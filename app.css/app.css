@@ -1,3 +1,10 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit  
+}
 body {
     font-family:'PT Sans', sans-serif;
 }
@@ -14,13 +21,14 @@ h2 {
 }
 h3 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .footer {
     background-color: rgb(190, 166, 100);
     font-weight: 700;
     text-align: center;
+    font-size: 1.5rem;
     bottom: 0;
     width: 100%;
     position: absolute;
@@ -34,11 +42,17 @@ h3 {
     justify-content: space-evenly;
 }
 
+@media (min-width: 480px) {
+    .estilo {flex-direction: row;
+    justify-content: space-around;
+    }
+}
+
 /* darle estilos */
 .estilos a {
     color:rgb(250, 235, 215);
     text-decoration: none;
-    padding: 0.70rem;
+    padding: 1.5rem;
 }
 
 /* para agregar el "boton" a los enlaces */
@@ -47,11 +61,12 @@ h3 {
 }
 
 .contenedor {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    
+    margin: 0 auto;
     font-weight: 700;
+    font-size: 2rem;
+    max-width: 1200px;
+    width: 100%;
 }
 
 
@@ -62,7 +77,7 @@ h3 {
     background-repeat: no-repeat;
     /* para que la imagen abarque el espacio requerido */
     background-size: cover;
-    padding: 10rem;
+    padding: 16rem;
     position: relative; 
 }
 .seccion1 {
